@@ -6,9 +6,6 @@
   </head>
   <body>
     <h1>Pig Latinizer</h1>
-    <form method="POST" action="/words">
-      <p>Input String: <input type="text" name="words"></p>
-      <input type="submit">
-    </form>
+    <%= @words.piglatinizer(params[:words].to_s) %>
   </body>
 </html>
